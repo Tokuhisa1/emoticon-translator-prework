@@ -10,7 +10,7 @@ def load_library(path)
     library[get[i]] = {}
 
     YAML.load_file(path).each do |key, value|
-      library[get[i]][key] = value[i]
+      library[get[i]][value[i]] = key
     end
   end
 
